@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chef Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button id="nanaGalbi" onclick="showRecipe('nanaGalbi')">NaNa Galbi</button>
+  <button id="nanaSS" onclick="showRecipe('nanaSS')">NaNa SS</button>
+  <button id="nanaVeggie" onclick="showRecipe('nanaVeggie')">NaNa Veggie</button>
+  <p id="recipe"></p>
+</body>
+<script>
+  function showRecipe(id){
+    let recipeText = "";
+
+    switch(id){
+      case "nanaGalbi":
+        recipeText = "2p 2y 1b 1f<br>2gyoza";
+        break;
+      case "nanaSS":
+        recipeText = "2p 2y 1b 1f<br>4tofu";
+        break;
+      case "nanaVeggie":
+        recipeText = "3y 2k 2b<br>6tofu";
+        break;
+      default:
+        recipeText = "recipe not found";
+    }
+
+    document.getElementById("recipe").innerHTML = recipeText;
+
+  }
+</script>
+</html>

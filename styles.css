@@ -1,0 +1,10 @@
+p {
+  color: rgb(0, 0, 0);
+  font-size:xx-large;
+  font-weight: 900;
+}
+
+button{
+  padding: 5px;
+  width: 50px;
+}
